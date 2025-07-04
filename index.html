@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gacor Group</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="assets/logoweb.png" type="image/png" />
+    <script
+      src="https://kit.fontawesome.com/ad31ed2825.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <nav>
+        <label class="logo">
+          <img src="assets/logoweb.png" alt="Gacor Garage" />
+          <p>Gacor Garage</p>
+        </label>
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+
+        <ul>
+          <li><a href="#home" onclick="setTitle(this)">Home</a></li>
+          <li>
+            <a href="#our-profile" onclick="setTitle(this)">Our Profile</a>
+          </li>
+          <li><a href="#portfolio" onclick="setTitle(this)">Portfolio</a></li>
+          <li><a href="#message-us" onclick="setTitle(this)">Message Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="banner" id="home">
+        <div class="home-banner" id="home-banner">
+          <div class="slide">
+            <img class="slide-banner" src="assets/banner1.jpg" />
+            <img class="slide-banner" src="assets/banner2.jpg" />
+            <img class="slide-banner" src="assets/banner3.jpg" />
+            <img class="slide-banner" src="assets/banner4.jpg" />
+          </div>
+          <div class="banner-text">
+            <h1 class="welcome1">
+              Hi, <span id="nameUser"></span>! Welcome to Gacor Garage
+            </h1>
+            <p class="welcome2">The best vintage car garage in your city</p>
+            <button class="button" onclick="seeMoreButton()">See More</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="profile">
+        <div class="profile-banner">
+          <h2 id="our-profile">About Us</h2>
+        </div>
+        <div class="text-outline">
+          <div class="profile-image">
+            <img src="assets/garage.webp" alt="Garage image" />
+          </div>
+          <div class="profile-text">
+            <p class="text-content">
+              Gacor Garage is where classic vibes meet modern passion. 
+              We are a bunch of car lovers who breathe life back into legendary
+              rides like the BMW E36 M3, Toyota AE86 Trueno, Lancer Evo, and
+              other iconic machines from the golden era of automotive culture.
+              Whether it's restoring, modifying, or simply preserving these
+              vintage beasts, we treat every project like a personal obsession
+              because for us, it's more than just business; it's a way of life.
+            </p>
+            <p class="text-content">
+              At Gacor Garage, we believe every old-school car has a story worth
+              telling and we're here to make sure it roars again. Our garage is a
+              space for enthusiasts, dreamers, and anyone who appreciates the soul
+              of real driving. Come by, talk cars, share stories, and maybe even
+              start your next build with us. This is more than a garage. This
+              is home for vintage car culture.
+            </p>
+          </div>
+        </div>
+
+        <div class="profile-banner">
+          <h2>Vision & Mission</h2>
+        </div>
+        <div class="text-outline">
+          <div class="vision-mission" id="vision">
+            <h3>Vision</h3>
+            <p class="text-content">
+              We dream of a world where vintage cars never die but
+              still tearing up streets and tracks with pride. Gacor Garage
+              exists to revive and preserve these timeless machines, keeping
+              their spirit alive for the next generation of gearheads to
+              enjoy and celebrate.
+            </p>
+          </div>
+          <div class="vision-mission">
+            <h3>Mission</h3>
+            <p class="text-content">
+              Our mission is to bring forgotten classics back to life by offering
+              top-tier restoration, access to hard-to-find spare parts, and
+              the best accessories tailored for vintage builds. We're here
+              to support fellow enthusiasts in building, maintaining, and
+              loving these iconic rides — one project, one part, one story
+              at a time.
+            </p>
+          </div>
+        </div>
+
+        <div class="profile-banner">
+          <h2>Our Services</h2>
+        </div>
+        <div class="text-outline" id="loc-outline">
+          <div class="Services">
+            <div class="garage-profile">
+              <img src="assets/cardealing.webp" />
+              <div class="services1">Car Dealing</div>
+            </div>
+            <div class="garage-profile">
+              <img src="assets/reparations.jpg" />
+              <div class="services1">Reparations</div>
+            </div>
+            <div class="garage-profile">
+              <img src="assets/spareparts.jpg" />
+              <div class="services1">Spareparts</div>
+            </div>
+            <div class="garage-profile">
+              <img src="assets/carstickers.jpg" />
+              <div class="services1">Stickers</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="our-portfolio">
+        <div class="profile-banner">
+          <h2 id="portfolio">Car Collection</h2>
+        </div>
+        <div class="car-collection">
+          <button class="arrow-button prev-button">
+            <i class="fa-solid fa-angle-left"></i>
+          </button>
+          <div class="display">
+            <div class="car-profile">
+              <p class="car-name">Toyota</p>
+              <img src="assets/toyota.jpg" />
+            </div>
+            <div class="car-profile">
+              <p class="car-name">Honda</p>
+              <img src="assets/honda.webp" />
+            </div>
+            <div class="car-profile">
+              <p class="car-name">Nissan</p>
+              <img src="assets/nissan.webp" />
+            </div>
+            <div class="car-profile">
+              <p class="car-name">Subaru</p>
+              <img src="assets/subaru.jpg" />
+            </div>
+            <div class="car-profile">
+              <p class="car-name">Mercedes</p>
+              <img src="assets/mercedes.jpeg" />
+            </div>
+            <div class="car-profile">
+              <p class="car-name">Mitsubishi</p>
+              <img src="assets/mitsubishi.jpg" />
+            </div>
+            <div class="car-profile">
+              <p class="car-name">Porsche</p>
+              <img src="assets/porsche.jpg" />
+            </div>
+          </div>
+          <button class="arrow-button next-button">
+            <i class="fa-solid fa-angle-right"></i>
+          </button>
+        </div>
+      </section>
+
+      <section class="contact">
+        <h2 id="message-us">Message Us</h2>
+        <div class="contact-form">
+          <form name="form" onsubmit="return validateForm()">
+            <div class="input-type">
+              <label for="name">Name</label>
+              <div class="colon">:</div>
+              <input
+                type="text"
+                id="inputname"
+                placeholder="your name"
+                name="name"
+              />
+            </div>
+            <div class="input-type">
+              <label for="birth-date">Birth Date</label>
+              <div class="colon">:</div>
+              <input
+                type="date"
+                id="inputbirthdate"
+                placeholder="your birth date"
+                name="birth-date"
+              />
+            </div>
+            <div class="input-type">
+              <label>Gender</label>
+              <div class="colon">:</div>
+              <div class="input-radio">
+                <input type="radio" id="male" name="gender" value="Male" />
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="Female" />
+                <label for="female">Female</label>
+              </div>
+            </div>
+            <div class="input-type" id="your-message">
+              <label for="message">Message</label>
+              <div class="colon">:</div>
+              <textarea
+                placeholder="your message"
+                id="inputmessage"
+                name="message"
+              ></textarea>
+            </div>
+            <div class="button-action">
+              <input type="submit" value="Submit" />
+            </div>
+          </form>
+          <div class="form-output">
+            <p>
+              <span class="output">Current Time : </span
+              ><span id="current-time"></span>
+            </p>
+            <br />
+            <p>
+              <span class="output">Name : </span><span id="submit-name"></span>
+            </p>
+            <p>
+              <span class="output">Birth Date : </span
+              ><span id="submit-birth-date"></span>
+            </p>
+            <p>
+              <span class="output">Gender : </span
+              ><span id="submit-gender"></span>
+            </p>
+            <p>
+              <span class="output">Message : </span
+              ><span id="submit-message"></span>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="logo">
+          <img src="assets/logoweb.png" alt="Gacor Garage" />
+          <p>Gacor Garage</p>
+        </div>
+        <div>© 2025 Gacor Garage | Felix - BokcoiGoreng</div>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
